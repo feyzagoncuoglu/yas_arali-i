@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Q1 </title>
+</head>
+    <script>
+        var yas, cinsiyet;
+
+        while (isNaN(yas) || (yas <= 0) || yas % 1 != 0) {
+        yas = prompt("lütfen yaşınızı girin","");
+        yas = parseFloat(yas,10);}
+
+        while (cinsiyet != "Dur"){
+        cinsiyet = prompt("Cinsiyetinizi girin","");
+        if (cinsiyet == 'E' || cinsiyet == 'K'){
+            break;}
+        }
+
+        if (yas < 18) {
+            if (cinsiyet == 'E') {
+        document.write("erkek çocuk");
+    } else {
+        document.write("kız çocuk");
+
+    }} else if(yas < 65){
+    if (cinsiyet == 'E') {
+        document.write("baba");
+    } else {
+        document.write("anne");
+
+}} else {
+    if (cinsiyet == 'E') {
+        document.write("dede");
+    } else {
+        document.write("nene");
+}}
+</script>
+</head>
+</html>
